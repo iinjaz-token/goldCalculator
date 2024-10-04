@@ -65,7 +65,7 @@ input {
     width: 90%;
     padding: 10px;
     padding-left: 20px;
-    /* Add some gap to the left side */
+    font-size: 16px; 
     border: 1px solid #555555;
     border-radius: 5px;
     background-color: #212121;
@@ -127,11 +127,6 @@ footer {
         padding: 10px;
     }
 
-    input {
-        font-size: 14px;
-        padding: 8px;
-    }
-
     footer p {
         font-size: 14px;
     }
@@ -150,11 +145,6 @@ footer {
     .gold-button {
         font-size: 12px;
         padding: 8px;
-    }
-
-    input {
-        font-size: 12px;
-        padding: 6px;
     }
 
     footer p {
