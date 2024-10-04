@@ -21,7 +21,7 @@
             <h1>حاسبة سعر الذهب</h1>
             <p>احسب قيمة الذهب بناءً على عدد الجرامات والعيار</p>
         </header>
-
+    
         <form id="goldForm">
             <div class="input-group">
                 <label for="weight">أدخل وزن الذهب (بالجرام):</label>
@@ -29,7 +29,10 @@
             </div>
             <button type="submit" class="gold-button">احسب</button>
         </form>
-
+    
+        <!-- Loading Indicator -->
+        <div id="loading" class="loading" style="display: none;">جارٍ الحساب...</div>
+    
         <div id="results" class="results">
             <p id="price18"></p>
             <p id="price21"></p>
@@ -37,6 +40,7 @@
             <p id="price24"></p>
         </div>
     </div>
+    
 
     <footer>
         <p>&copy; 2024 ذهب. جميع الحقوق محفوظة.</p>

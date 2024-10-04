@@ -3,6 +3,9 @@ document.getElementById('goldForm').addEventListener('submit', function(event) {
 
     const weight = document.getElementById('weight').value;
 
+    // Show the loading indicator
+    document.getElementById('loading').style.display = 'block';
+
     // Fetch live gold price in SAR using GoldAPI
     fetch('https://www.goldapi.io/api/XAU/SAR', {
         headers: {
@@ -41,5 +44,9 @@ document.getElementById('goldForm').addEventListener('submit', function(event) {
     })
     .catch(error => {
         console.error('Error fetching gold price:', error);
+    })
+    .finally(() => {
+        // Hide the loading indicator once the fetch is complete
+        document.getElementById('loading').style.display = 'none';
     });
 });

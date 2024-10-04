@@ -188,3 +188,12 @@ footer a {
     vertical-align: middle;
     /* Align the icon with the text */
 }
+
+/* Loading indicator styling */
+.loading {
+    text-align: center;
+    font-size: 18px;
+    color: gold;
+    margin-top: 10px;
+    font-weight: bold;
+}
