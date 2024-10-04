@@ -1,15 +1,62 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>حاسبة سعر الذهب</title>
+
+    <!-- Primary SEO Meta Tags -->
+    <title>Gold - حاسبة سعر الذهب | Gold Price Calculator</title>
+    <meta name="description"
+        content="Gold Shop Bahrain - Use our gold price calculator to estimate the value of your gold by weight and carat. Shop gold in Bahrain.">
+    <meta name="keywords"
+        content="Gold Shop Bahrain, Gold Price, Gold Calculator, Gold Store, Buy Gold, Gold Jewelry, عيار 18, عيار 21, عيار 22, عيار 24, متجر الذهب, البحرين">
+    <meta name="author" content="Gold - Bahrain">
+    <meta name="robots" content="index, follow">
+
+    <!-- Arabic Meta Tags (for better local SEO) -->
+    <meta name="description" lang="ar"
+        content="متجر الذهب في البحرين - استخدم حاسبة سعر الذهب لمعرفة قيمة الذهب بناءً على الوزن والعيار. اشترِ الذهب في البحرين.">
+    <meta name="keywords" lang="ar"
+        content="متجر الذهب في البحرين, سعر الذهب, حاسبة الذهب, متجر المجوهرات الذهبية, شراء الذهب, عيار 18, عيار 21, عيار 22, عيار 24, البحرين">
+
+    <!-- Open Graph Meta Tags (for social media like Facebook, WhatsApp) -->
+    <meta property="og:title" content="Gold - حاسبة سعر الذهب | Gold Price Calculator">
+    <meta property="og:description"
+        content="Shop gold in Bahrain. Use our gold price calculator to estimate the value of your gold by weight and carat.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thegoldbh.com">
+    <meta property="og:image" content="https://thegoldbh.com/media/2.png">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="ar_AR">
+    <meta property="og:site_name" content="Gold">
+
+    <!-- Twitter Card Meta Tags (for Twitter sharing) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gold - حاسبة سعر الذهب | Gold Price Calculator">
+    <meta name="twitter:description"
+        content="Shop gold in Bahrain. Use our gold price calculator to estimate the value of your gold by weight and carat.">
+    <meta name="twitter:image" content="https://thegoldbh.com/media/2.png">
+
+    <!-- Location Info (Structured Data) -->
+    <meta name="geo.region" content="BH"> <!-- BH = Bahrain -->
+    <meta name="geo.placename" content="Bahrain">
+    <meta name="geo.position" content="26.0667;50.5577">
+    <meta name="ICBM" content="26.0667, 50.5577">
+
+    <!-- Instagram and Contact Info -->
+    <meta name="contact:business" content="Gold">
+    <meta name="contact:website" content="https://thegoldbh.com">
+    <meta name="contact:instagram" content="https://www.instagram.com/thegold_bh">
+
     <!-- Link to the favicon -->
     <link rel="icon" href="media/2.png" type="image/png">
+
     <!-- Import Tajawal font -->
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Logo outside of the calculator container, centered on top -->
     <div class="logo-container">
@@ -21,7 +68,7 @@
             <h1>حاسبة سعر الذهب</h1>
             <p>احسب قيمة الذهب بناءً على عدد الجرامات والعيار</p>
         </header>
-    
+
         <form id="goldForm">
             <div class="input-group">
                 <label for="weight">أدخل وزن الذهب (بالجرام):</label>
@@ -29,10 +76,10 @@
             </div>
             <button type="submit" class="gold-button">احسب</button>
         </form>
-    
+
         <!-- Loading Indicator -->
         <div id="loading" class="loading" style="display: none;">جارٍ الحساب...</div>
-    
+
         <div id="results" class="results">
             <p id="price18"></p>
             <p id="price21"></p>
@@ -40,7 +87,7 @@
             <p id="price24"></p>
         </div>
     </div>
-    
+
 
     <footer>
         <p>&copy; 2024 ذهب. جميع الحقوق محفوظة.</p>
@@ -50,4 +97,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
