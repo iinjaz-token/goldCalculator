@@ -9,17 +9,14 @@ body {
     flex-direction: column;
     justify-content: space-between;
     direction: rtl;
-    /* Ensure the layout is right to left */
 }
 
 /* Logo outside the container */
 .logo-container {
     text-align: center;
-    margin-top: 150px;
-    /* Lower the logo slightly */
+    margin-top: 130px;
 }
 
-/* Add styling for the logo */
 .logo {
     width: 160px;
     /* Increase logo size */
