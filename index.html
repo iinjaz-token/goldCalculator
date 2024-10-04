@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حاسبة سعر الذهب</title>
+    <!-- Link to the favicon -->
+    <link rel="icon" href="media/2.png" type="image/png">
+    <!-- Import Tajawal font -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Logo outside of the calculator container, centered on top -->
+    <div class="logo-container">
+        <img src="media/2.png" alt="Logo" class="logo">
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>حاسبة سعر الذهب</h1>
+            <p>احسب قيمة الذهب بناءً على عدد الجرامات والعيار</p>
+        </header>
+
+        <form id="goldForm">
+            <div class="input-group">
+                <label for="weight">أدخل وزن الذهب (بالجرام):</label>
+                <input type="number" id="weight" placeholder="أدخل الوزن بالجرام" required>
+            </div>
+            <button type="submit" class="gold-button">احسب</button>
+        </form>
+
+        <div id="results" class="results">
+            <p id="price18"></p>
+            <p id="price21"></p>
+            <p id="price22"></p>
+            <p id="price24"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 ذهب. جميع الحقوق محفوظة.</p>
+        <!-- Add Instagram handle -->
+        <p>تابعنا على الإنستغرام: <a href="https://www.instagram.com/thegold_bh" target="_blank">thegold_bh</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
