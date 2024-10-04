@@ -25,19 +25,14 @@ document.getElementById('goldForm').addEventListener('submit', function(event) {
             const price22 = pricePerGramBHD * 0.916 * weight;
             const price24 = pricePerGramBHD * 1 * weight;
 
-            // Update the content in the results section, only if the elements exist
-            if (document.getElementById('price18')) {
-                document.getElementById('price18').textContent = `سعر عيار 18: ${price18.toFixed(2)} دينار بحريني`;
-            }
-            if (document.getElementById('price21')) {
-                document.getElementById('price21').textContent = `سعر عيار 21: ${price21.toFixed(2)} دينار بحريني`;
-            }
-            if (document.getElementById('price22')) {
-                document.getElementById('price22').textContent = `سعر عيار 22: ${price22.toFixed(2)} دينار بحريني`;
-            }
-            if (document.getElementById('price24')) {
-                document.getElementById('price24').textContent = `سعر عيار 24: ${price24.toFixed(2)} دينار بحريني`;
-            }
+            // Update the content in the results section
+            document.getElementById('price18').innerHTML = `سعر عيار <span class="gold-text">18</span>: ${price18.toFixed(2)} دينار بحريني`;
+            document.getElementById('price21').innerHTML = `سعر عيار <span class="gold-text">21</span>: ${price21.toFixed(2)} دينار بحريني`;
+            document.getElementById('price22').innerHTML = `سعر عيار <span class="gold-text">22</span>: ${price22.toFixed(2)} دينار بحريني`;
+            document.getElementById('price24').innerHTML = `سعر عيار <span class="gold-text">24</span>: ${price24.toFixed(2)} دينار بحريني`;
+
+            // Show the results div after calculation
+            document.getElementById('results').style.display = 'block';
         } else {
             console.error('Error fetching valid data from the API');
         }

@@ -184,3 +184,13 @@ footer a {
     margin-top: 10px;
     font-weight: bold;
 }
+
+/* Style the carat numbers in gold */
+.gold-text {
+    color: gold;
+    font-weight: bold;
+}
+
+#results {
+    display: none;
+}
